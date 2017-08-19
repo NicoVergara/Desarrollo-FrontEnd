@@ -112,7 +112,7 @@ elementos.map(function(ele) {
 
 let elementos2 = elementos.map(e => console.log(e));
 
-// Clases en ES6
+// Clase en JavaScript Nativo
 function Persona(nombre) {
   this.nombre = nombre;
 }
@@ -120,11 +120,27 @@ function Persona(nombre) {
 var nuevaPersona = new Persona('Sebastián');
 console.log('¡Hola!' + nuevaPersona.nombre);
 
+// Clase en ES6
 class Persona2 {
-  constructor(nombre) {
+  constructor(nombre, edad) {
     this.nombre = nombre;
+    this.edad = edad;
   }
 }
 
-let nuevaPersona2 = new Persona2('Pepe');
-console.log('Hola ' + nuevaPersona2.nombre);
+let nuevaPersona2 = new Persona2();
+nuevaPersona2.nombre = 'Pepe';
+nuevaPersona2.edad = 32;
+console.log(
+  `Hola, mi nombre es ${nuevaPersona2.nombre} y tengo ${nuevaPersona2.edad} años.`
+);
+
+// Herencia
+class Empleado extends Persona2 {
+  // Método sueldo. Recibe el sueldo nuevo más el sueldo nuevo.
+  // Consultar la edad.
+  constructor(nombre, edad, sueldo) {
+    super(nombre, edad);
+    this.sueldo = sueldo;
+  }
+}
