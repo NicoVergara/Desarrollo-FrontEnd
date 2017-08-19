@@ -111,3 +111,20 @@ elementos.map(function(ele) {
 });
 
 let elementos2 = elementos.map(e => console.log(e));
+
+// Clases en ES6
+function Persona(nombre) {
+  this.nombre = nombre;
+}
+
+var nuevaPersona = new Persona('Sebastián');
+console.log('¡Hola!' + nuevaPersona.nombre);
+
+class Persona2 {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+}
+
+let nuevaPersona2 = new Persona2('Pepe');
+console.log('Hola ' + nuevaPersona2.nombre);
