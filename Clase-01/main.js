@@ -84,3 +84,21 @@ Array.from(lista).find(function(node) {
     node.style.color = 'red';
   }
 });
+
+// Arrow Function
+function add(a, b) {
+  return a + b;
+}
+console.log('Suma sin arrow function: ', add(5, 3));
+
+var add2 = (x, y) => x + y;
+console.log('Suma con arrow function', add(5, 3));
+
+function saludar(msg, nombre) {
+  console.log(msg + ' ' + nombre);
+}
+saludar('¡Hola!', 'Nicolás');
+
+// Si la función tiene una sola línea, me ahorro las llaves de apertura y cierre.
+let saludar2 = (msg, nombre) => console.log(`${msg} ${nombre}`);
+saludar2('¡Buenas tardes!', 'Miguel');
