@@ -3,63 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Clase01 - EC2015</title>
+  <title>Clase01 - ES6</title>
 </head>
+<ul>
+  <li class="item">1</li>
+  <li class="item">2</li>
+  <li class="active">3</li>
+  <li class="item">4</li>
+  <li class="item">5</li>
+</ul>
 
 <body>
-  <script type="text/javascript">
-  //Primer Clase: Nivelación. Let y Const.
-// Let: Agregar información.
-if (true) {
-  let name = 'Nicolas';
-  console.log(name);
-}
-
-let i = 0;
-for (; i < 10; i++) {
-  console.log(i);
-}
-console.log('valor final de i es:', i);
-
-// Let en funciones: Agregar información.
-function ejemplo1() {
-  let color = 'rojo';
-
-  if (true) {
-    let color = 'amarillo';
-    console.log('subBloque 1 color:', color);
-  }
-
-  console.log('ejemplo 1 color:', color);
-}
-ejemplo1();
-
-// Const: Agregar información.
-var name = 'Juan';
-console.log('Mi nombre es: ', name);
-
-name = 'Pablo';
-
-console.log('Mi nuevo nombre es: ', name);
-
-// Objetos
-const obj = {
-  frutas: {
-    manzana: {
-      color: 'rojo'
-    }
-  }
-};
-console.log('El color de la fruta es: ', obj.frutas.manzana.color);
-
-obj.frutas.manzana.color = 'verde';
-
-console.log('Mi nuevo color de fruta es: ', obj.frutas.manzana.color);
-
-// Concatenación: Strings Templates.
-let nombre = 'Nicolas';
-console.log(`Mi nombre es ${nombre}`);
-</script>
+  <script src="main.js"></script>
 </body>
 
 </html>
