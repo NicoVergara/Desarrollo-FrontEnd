@@ -102,3 +102,12 @@ saludar('¡Hola!', 'Nicolás');
 // Si la función tiene una sola línea, me ahorro las llaves de apertura y cierre.
 let saludar2 = (msg, nombre) => console.log(`${msg} ${nombre}`);
 saludar2('¡Buenas tardes!', 'Miguel');
+
+// Map
+let elementos = ['Hidrógeno', 'Helio', 'Litio'];
+
+elementos.map(function(ele) {
+  console.log(ele);
+});
+
+let elementos2 = elementos.map(e => console.log(e));
