@@ -120,7 +120,7 @@ function Persona(nombre) {
 var nuevaPersona = new Persona('Sebastián');
 console.log('¡Hola!' + nuevaPersona.nombre);
 
-// Clase en ES6
+// Clases en ES6
 class Persona2 {
   constructor(nombre, edad) {
     this.nombre = nombre;
