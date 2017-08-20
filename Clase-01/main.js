@@ -128,19 +128,19 @@ class Persona2 {
   }
 }
 
-let nuevaPersona2 = new Persona2();
-nuevaPersona2.nombre = 'Pepe';
-nuevaPersona2.edad = 32;
-console.log(
-  `Hola, mi nombre es ${nuevaPersona2.nombre} y tengo ${nuevaPersona2.edad} años.`
-);
-
 // Herencia
 class Empleado extends Persona2 {
-  // Método sueldo. Recibe el sueldo nuevo más el sueldo nuevo.
+  // Método sueldo. Recibe el sueldo nuevo más el sueldo existente.
   // Consultar la edad.
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
     this.sueldo = sueldo;
   }
 }
+
+let nuevaPersona2 = new Persona2();
+nuevaPersona2.nombre = 'Nicolás Vergara';
+nuevaPersona2.edad = 32;
+console.log(`Empleado: ${nuevaPersona2.nombre}
+Edad: ${nuevaPersona2.edad}
+Sueldo: `);
