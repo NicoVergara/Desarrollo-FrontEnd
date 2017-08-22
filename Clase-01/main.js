@@ -131,16 +131,22 @@ class Persona2 {
 // Herencia
 class Empleado extends Persona2 {
   // Método sueldo. Recibe el sueldo nuevo más el sueldo existente.
-  // Consultar la edad.
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
-    this.sueldo = sueldo;
+    this.sueldo = 1000;
+  }
+
+  get anioRetiro() {
+    return 65 - super.edad;
+  }
+
+  sueldoAnual() {
+    return this.sueldo * 12;
   }
 }
 
-let nuevaPersona2 = new Persona2();
-nuevaPersona2.nombre = 'Nicolás Vergara';
-nuevaPersona2.edad = 32;
-console.log(`Empleado: ${nuevaPersona2.nombre}
-Edad: ${nuevaPersona2.edad}
-Sueldo: `);
+let nuevoEmpleado = new Empleado('Nicolás Vergara', 32);
+console.log(`Empleado: ${nuevoEmpleado.nombre}
+Edad: ${nuevoEmpleado.edad} años
+Sueldo Anual: ${nuevoEmpleado.sueldoAnual()} pesos
+Años para Jubilarse: ${nuevoEmpleado.anioRetiro}`);
