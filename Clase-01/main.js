@@ -130,7 +130,6 @@ class Persona2 {
 
 // Herencia
 class Empleado extends Persona2 {
-  // Método sueldo. Recibe el sueldo nuevo más el sueldo existente.
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
     this.sueldo = 1000;
