@@ -132,11 +132,7 @@ class Persona2 {
 class Empleado extends Persona2 {
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
-    this.sueldo = 1000;
-  }
-
-  get anioRetiro() {
-    return 65 - super.edad;
+    this.sueldo = sueldo;
   }
 
   sueldoAnual() {
@@ -144,8 +140,7 @@ class Empleado extends Persona2 {
   }
 }
 
-let nuevoEmpleado = new Empleado('Nicolás Vergara', 32);
+let nuevoEmpleado = new Empleado('Nicolás Vergara', 32, 1000);
 console.log(`Empleado: ${nuevoEmpleado.nombre}
 Edad: ${nuevoEmpleado.edad} años
-Sueldo Anual: ${nuevoEmpleado.sueldoAnual()} pesos
-Años para Jubilarse: ${nuevoEmpleado.anioRetiro}`);
+Sueldo Anual: ${nuevoEmpleado.sueldoAnual()} pesos`);
