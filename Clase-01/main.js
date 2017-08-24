@@ -1,3 +1,13 @@
+// 1. Nivelación
+// 2. Let y Const
+// 3. Arrow Function
+// 4. String Templates
+
+// 5. Programación Funcional
+// 6. Array Methods
+// 7. Clases y Herencia
+// 8. Promises
+
 //Primer Clase: Nivelación. Let y Const.
 // Let: Agregar información.
 if (true) {
