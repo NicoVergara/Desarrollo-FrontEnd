@@ -95,7 +95,28 @@ console.log(str);
 
 // 5. Programación Funcional
 // 6. Array Methods
-// 7. Clases y Herencia
+
+// 7. Clases y Herencia:
+// Clase en JavaScript Nativo: no existía 'class' para declarar las clases.
+function Persona(nombre) {
+  this.nombre = nombre;
+}
+
+var nuevaPersona = new Persona('Sebastián');
+console.log('¡Hola!' + nuevaPersona.nombre);
+
+// Clases en ES6: se declaran utilizando la palabra reservada 'class', seguida del nombre de la clase que estmamos creando.
+// Constructor de Persona en ES6.
+class Persona2 {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+}
+
+var nuevaPersona2 = new Persona2('Nicolás', 28);
+console.log('¡Hola!' + nuevaPersona2.nombre);
+
 // 8. Promises
 
 // Array: Método Find.
@@ -128,22 +149,6 @@ Array.from(lista).find(function(node) {
     node.style.color = 'red';
   }
 });
-
-// Clase en JavaScript Nativo
-function Persona(nombre) {
-  this.nombre = nombre;
-}
-
-var nuevaPersona = new Persona('Sebastián');
-console.log('¡Hola!' + nuevaPersona.nombre);
-
-// Clases en ES6
-class Persona2 {
-  constructor(nombre, edad) {
-    this.nombre = nombre;
-    this.edad = edad;
-  }
-}
 
 // Herencia
 class Empleado extends Persona2 {
