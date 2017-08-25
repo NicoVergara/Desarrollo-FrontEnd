@@ -1,15 +1,14 @@
 // 1. Nivelación
+// Closures
+// Local y global scope
+// Hoising
+// Event Loop
+// This
+// Objetos
+
 // 2. Let y Const
-// 3. Arrow Function
-// 4. String Templates
-
-// 5. Programación Funcional
-// 6. Array Methods
-// 7. Clases y Herencia
-// 8. Promises
-
-//Primer Clase: Nivelación. Let y Const.
-// Let: Agregar información.
+// Let: a diferencia de VAR es block scoped, si está referenciada dentro de {} no puede ser llamada desde afuera.
+// Con LET podemos controlar el ámbito de las variables.
 if (true) {
   let name = 'Nicolas';
   console.log(name);
@@ -21,7 +20,7 @@ for (; i < 10; i++) {
 }
 console.log('valor final de i es:', i);
 
-// Let en funciones: Agregar información.
+// Let en funciones.
 function ejemplo1() {
   let color = 'rojo';
 
@@ -34,7 +33,7 @@ function ejemplo1() {
 }
 ejemplo1();
 
-// Const: Agregar información.
+// Const: variables cuyo valor no varía.
 var name = 'Juan';
 console.log('Mi nombre es: ', name);
 
@@ -49,6 +48,14 @@ console.log('El color de la fruta es: ', obj.frutas.manzana.color);
 obj.frutas.manzana.color = 'verde';
 
 console.log('Mi nuevo color de fruta es: ', obj.frutas.manzana.color);
+
+// 3. Arrow Function
+// 4. String Templates
+
+// 5. Programación Funcional
+// 6. Array Methods
+// 7. Clases y Herencia
+// 8. Promises
 
 // Concatenación: Strings Templates.
 let nombre = 'Nicolás';
