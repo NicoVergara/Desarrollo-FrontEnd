@@ -93,33 +93,10 @@ Mi nombre es ${getName('Nicolás')}`;
 
 console.log(str);
 
-// 5. Programación Funcional
+// 5. Programación Funcional:
+
 // 6. Array Methods
-
-// 7. Clases y Herencia:
-// Clase en JavaScript Nativo: no existía 'class' para declarar las clases.
-function Persona(nombre) {
-  this.nombre = nombre;
-}
-
-var nuevaPersona = new Persona('Sebastián');
-console.log('¡Hola!' + nuevaPersona.nombre);
-
-// Clases en ES6: se declaran utilizando la palabra reservada 'class', seguida del nombre de la clase que estmamos creando.
-// Constructor de Persona en ES6.
-class Persona2 {
-  constructor(nombre, edad) {
-    this.nombre = nombre;
-    this.edad = edad;
-  }
-}
-
-var nuevaPersona2 = new Persona2('Nicolás', 28);
-console.log('¡Hola!' + nuevaPersona2.nombre);
-
-// 8. Promises
-
-// Array: Método Find.
+// Método Find.
 let numeros = [2, 30, 1, 5, 10];
 let resultado = numeros.find(function(x) {
   return x % 10 == 0;
@@ -141,6 +118,37 @@ a.find(function(value, index) {
   console.log('Indice: ' + index + ' valor ' + value);
 });
 
+// 7. Clases y Herencia:
+// Clase en JavaScript Nativo: no existía 'class' para declarar las clases.
+function Persona(nombre) {
+  this.nombre = nombre;
+}
+
+var nuevaPersona = new Persona('Sebastián');
+console.log('¡Hola!' + nuevaPersona.nombre);
+
+// Clases en ES6: se declaran utilizando la palabra reservada 'class', seguida del nombre de la clase que estmamos creando.
+// Constructor de Persona en ES6.
+class Persona2 {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+}
+
+// Herencia: mecanismo por el cual una clase se construye a partir de otra.
+class Empleado extends Persona2 {
+  constructor(nombre, edad, sexo) {
+    super(nombre, edad);
+    this.sexo = sexo;
+  }
+}
+
+var nuevaPersona2 = new Persona2('Nicolás', 28);
+console.log('¡Hola!' + nuevaPersona2.nombre);
+
+// 8. Promises
+
 // Recorrer el html y cambiar el style de la clase 'ACTIVE'.
 let lista = document.getElementsByTagName('li');
 Array.from(lista).find(function(node) {
@@ -150,8 +158,15 @@ Array.from(lista).find(function(node) {
   }
 });
 
-// Herencia
-class Empleado extends Persona2 {
+// TRABAJO PRÁCTICO
+class Persona3 {
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+}
+
+class Empleado2 extends Persona3 {
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
     this.sueldo = sueldo;
@@ -162,7 +177,7 @@ class Empleado extends Persona2 {
   }
 }
 
-let nuevoEmpleado = new Empleado('Nicolás Vergara', 32, 1000);
+let nuevoEmpleado = new Empleado2('Nicolás Vergara', 32, 1000);
 console.log(`Empleado: ${nuevoEmpleado.nombre}
 Edad: ${nuevoEmpleado.edad} años
 Sueldo Anual: ${nuevoEmpleado.sueldoAnual()} pesos`);
