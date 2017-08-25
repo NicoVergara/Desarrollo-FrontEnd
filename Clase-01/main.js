@@ -50,13 +50,9 @@ obj.frutas.manzana.color = 'verde';
 console.log('Mi nuevo color de fruta es: ', obj.frutas.manzana.color);
 
 // 3. Arrow Function
-// 4. String Templates
 
-// 5. Programación Funcional
-// 6. Array Methods
-// 7. Clases y Herencia
-// 8. Promises
-
+// 4. String Templates: permite el uso de expresiones incrustadas, se puede utilizar cadenas de texto de más de una línea.
+// También ofrece funcionalidades de interpolación de cadenas de textos.
 // Concatenación: Strings Templates.
 let nombre = 'Nicolás';
 console.log(`¡Hola!
@@ -70,6 +66,11 @@ let str = `¡Hola! Soy Desarrollador FrontEnd
 Mi nombre es ${getName('Nicolás')}`;
 
 console.log(str);
+
+// 5. Programación Funcional
+// 6. Array Methods
+// 7. Clases y Herencia
+// 8. Promises
 
 // Array: Método Find.
 let numeros = [2, 30, 1, 5, 10];
