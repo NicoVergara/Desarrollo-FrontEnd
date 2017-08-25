@@ -49,7 +49,33 @@ obj.frutas.manzana.color = 'verde';
 
 console.log('Mi nuevo color de fruta es: ', obj.frutas.manzana.color);
 
-// 3. Arrow Function
+// 3. Arrow Function: es una nueva sintaxis para escribir funciones. No crean un nuevo clousure, en otras palabras
+// THIS hace referencia a la función más próxima hacia arriba en la jerarquía.
+function add(a, b) {
+  return a + b;
+}
+console.log('Suma sin arrow function: ', add(5, 3));
+
+var add2 = (x, y) => x + y;
+console.log('Suma con arrow function', add2(5, 3));
+
+function saludar(msg, nombre) {
+  console.log(msg + ' ' + nombre);
+}
+saludar('¡Hola!', 'Nicolás');
+
+// Programaciòn Funcional: Map utilizando Arrow Function.
+let elementos = ['Hidrógeno', 'Helio', 'Litio'];
+
+elementos.map(function(ele) {
+  console.log(ele);
+});
+
+let elementos2 = elementos.map(e => console.log(e));
+
+// Si la función tiene una sola línea, me ahorro las llaves de apertura y cierre.
+let saludar2 = (msg, nombre) => console.log(`${msg} ${nombre}`);
+saludar2('¡Buenas tardes!', 'Miguel');
 
 // 4. String Templates: permite el uso de expresiones incrustadas, se puede utilizar cadenas de texto de más de una línea.
 // También ofrece funcionalidades de interpolación de cadenas de textos.
@@ -102,33 +128,6 @@ Array.from(lista).find(function(node) {
     node.style.color = 'red';
   }
 });
-
-// Arrow Function
-function add(a, b) {
-  return a + b;
-}
-console.log('Suma sin arrow function: ', add(5, 3));
-
-var add2 = (x, y) => x + y;
-console.log('Suma con arrow function', add(5, 3));
-
-function saludar(msg, nombre) {
-  console.log(msg + ' ' + nombre);
-}
-saludar('¡Hola!', 'Nicolás');
-
-// Si la función tiene una sola línea, me ahorro las llaves de apertura y cierre.
-let saludar2 = (msg, nombre) => console.log(`${msg} ${nombre}`);
-saludar2('¡Buenas tardes!', 'Miguel');
-
-// Map
-let elementos = ['Hidrógeno', 'Helio', 'Litio'];
-
-elementos.map(function(ele) {
-  console.log(ele);
-});
-
-let elementos2 = elementos.map(e => console.log(e));
 
 // Clase en JavaScript Nativo
 function Persona(nombre) {
