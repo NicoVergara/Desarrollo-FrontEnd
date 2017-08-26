@@ -1,15 +1,20 @@
 // TRABAJO PRÁCTICO
-class Persona3 {
+class Persona {
   constructor(nombre, edad) {
     this.nombre = nombre;
     this.edad = edad;
   }
 }
 
-class Empleado2 extends Persona3 {
+class Empleado extends Persona {
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
     this.sueldo = sueldo;
+    this.aumento = 10000;
+  }
+
+  aumentoSueldo(aumento) {
+    return (this.sueldo += this.aumento);
   }
 
   sueldoAnual() {
@@ -17,9 +22,10 @@ class Empleado2 extends Persona3 {
   }
 }
 
-let nuevoEmpleado = new Empleado2('Nicolás Vergara', 32, 1000);
+let nuevoEmpleado = new Empleado('Nicolás Vergara', 32, 20000);
 console.log(`Empleado: ${nuevoEmpleado.nombre}
 Edad: ${nuevoEmpleado.edad} años
+Aumento de Sueldo: ${nuevoEmpleado.aumentoSueldo()}
 Sueldo Anual: ${nuevoEmpleado.sueldoAnual()} pesos`);
 
 class Person {
@@ -30,6 +36,7 @@ class Person {
   get name() {
     return this._name.toUpperCase();
   }
+
   set name(newName) {
     this._name = newName;
   }
@@ -48,6 +55,7 @@ class Programmer extends Person {
   get programmingLanguage() {
     return this._programmingLanguage;
   }
+
   set programmingLanguage(newprogrammingLanguage) {
     this._programmingLanguage = newprogrammingLanguage;
   }
