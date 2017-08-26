@@ -147,7 +147,24 @@ class Empleado extends Persona2 {
 var nuevaPersona2 = new Persona2('Nicolás', 28);
 console.log('¡Hola!' + nuevaPersona2.nombre);
 
-// 8. Promises
+// 8. Promises: son objetos que tienen dos métodos, resolv y reject, y se utiliza para realizar tareas asincrónicas.
+let promesa = new Promise((resolve, reject) => {
+  if (false) {
+    resolve('¡éxito!');
+  } else {
+    reject('error');
+  }
+});
+
+// THEN (true)
+// CATCH (false)
+promesa
+  .then(msg => {
+    console.log(msg);
+  })
+  .catch(msg => {
+    console.log(msg);
+  });
 
 // Recorrer el html y cambiar el style de la clase 'ACTIVE'.
 let lista = document.getElementsByTagName('li');
