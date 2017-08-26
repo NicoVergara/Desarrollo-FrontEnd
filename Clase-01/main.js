@@ -166,6 +166,27 @@ promesa
     console.log(msg);
   });
 
+// FETCH
+function obtenerTexto(url) {
+  return new Promise((resolve, reject) => {
+    fetch(url)
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        }
+        reject(
+          'No se ha podido acceder a ese recurso. Status: ' + response.status
+        );
+      })
+      .then(texto => resolve(texto))
+      .catch(err => reject(err));
+  });
+}
+
+obtenerTexto('test.txt')
+  .then(texto => console.log(texto))
+  .catch(err => console.log('ERROR', err));
+
 // Recorrer el html y cambiar el style de la clase 'ACTIVE'.
 let lista = document.getElementsByTagName('li');
 Array.from(lista).find(function(node) {
