@@ -37,7 +37,7 @@ ejemplo1();
 var name = 'Juan';
 console.log('Mi nombre es: ', name);
 
-const name = 'Pablo';
+name = 'Pablo';
 
 console.log('Mi nuevo nombre es: ', name);
 
