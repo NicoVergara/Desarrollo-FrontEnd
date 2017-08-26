@@ -164,11 +164,32 @@ class Persona3 {
     this.nombre = nombre;
     this.edad = edad;
   }
+
+  getNombre() {
+    return nombre;
+  }
+  setNombre() {
+    this.nombre = nombre;
+  }
+
+  getEdad() {
+    return edad;
+  }
+  setEdad() {
+    this.edad = edad;
+  }
 }
 
 class Empleado2 extends Persona3 {
   constructor(nombre, edad, sueldo) {
     super(nombre, edad);
+    this.sueldo = sueldo;
+  }
+
+  getSueldo() {
+    return sueldo;
+  }
+  setSueldo() {
     this.sueldo = sueldo;
   }
 
