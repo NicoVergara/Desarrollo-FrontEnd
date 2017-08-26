@@ -6,9 +6,13 @@ button {
 }
 
 button.success {
-  background: rgb(86, 184, 51);
+  background: green;
 }
 
 button.cancel {
-  background: rgb(196, 19, 61);
+  background: red;
+}
+
+button.waiting {
+  background: lightblue;
 }
