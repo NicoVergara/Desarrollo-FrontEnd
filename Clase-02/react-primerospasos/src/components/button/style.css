@@ -1,14 +1,14 @@
 button {
-  padding: 10px 25px;
-  font-size: 36px;
+  padding: 5px 10px;
+  font-size: 15px;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 1px;
 }
 
 button.success {
-  background: green;
+  background: rgb(86, 184, 51);
 }
 
 button.cancel {
-  background: red;
+  background: rgb(196, 19, 61);
 }
