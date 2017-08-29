@@ -28,4 +28,15 @@ ReactDOM.render(
   />,
   document.getElementById('root3')
 );
+
+ReactDOM.render(
+  <Button
+    value="Esperando"
+    color="waiting"
+    event={() => {
+      alert('¡Esperando!');
+    }}
+  />,
+  document.getElementById('root4')
+);
 registerServiceWorker();
