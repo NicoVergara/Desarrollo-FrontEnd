@@ -6,8 +6,13 @@ button {
   position: relative;
   letter-spacing: 0.5px;
   border: none;
-  transition: all 0.3s ease 0s;
+  transition: font-size 0.3s ease;
   color: #fff;
+
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  text-align: center;
 }
 
 button.success {
