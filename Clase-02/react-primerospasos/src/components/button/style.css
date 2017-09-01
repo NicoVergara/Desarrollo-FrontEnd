@@ -1,17 +1,18 @@
 button {
   font-size: 12px;
-  padding: 12px 12px;
-  margin-right: 4px;
-  outline: 0;
-  position: relative;
-  letter-spacing: 0.5px;
-  border: none;
-  transition: font-size 0.3s ease;
+  line-height: 17px;
   color: #fff;
 
+  padding: 14px 70px;
+  margin-right: 4px;
+  position: relative;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  border: none;
   cursor: pointer;
-  height: 50px;
-  width: 100px;
+
+  height: 50%;
+  width: 25%;
   text-align: center;
 }
 
