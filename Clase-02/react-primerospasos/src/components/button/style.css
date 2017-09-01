@@ -1,18 +1,27 @@
 button {
-  padding: 5px 10px;
-  font-size: 15px;
+  font-size: 12px;
+  padding: 12px 12px;
+  margin-right: 4px;
+  outline: 0;
+  position: relative;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease 0s;
   color: #fff;
-  border-radius: 1px;
 }
 
 button.success {
-  background: green;
+  background: #76d7c4;
 }
 
 button.cancel {
-  background: red;
+  background: #e74c3c;
 }
 
 button.waiting {
-  background: lightblue;
+  background: #85c1e9;
+}
+
+.btn-group-container {
+  padding: 10px 10px;
 }
